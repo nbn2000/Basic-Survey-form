@@ -1,0 +1,146 @@
+/* body */
+
+body {
+  background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  color: #f3f3f3;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+#survey-form {
+  padding: 40px;
+  border: 20px #f3f3f3;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1%;
+  width: 70vw;
+  max-width: 550px;
+  min-width: 350px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+/* Header */
+
+#title,
+#description {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+/* label */
+
+input[type=text],
+input[type=number],
+input[type=email],
+#dropdown,
+#dropdown2 {
+  margin: 8px 0px;
+  display: block;
+  height: 2.5em;
+  width: 95%;
+  border: none;
+  padding: none;
+  border-radius: 3px;
+  font-size: large;
+
+}
+
+/* account type */
+
+#account-type {
+  display: inline-block;
+  font-size: 20px;
+}
+
+input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #f3f3f3;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid #f3f3f3;
+}
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ffa500;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+/* check box */
+
+#checkbox {
+  display: inline-block;
+  margin: 0 0.5em 0 0;
+  font-size: 20px;
+}
+
+input[type=checkbox]:after {
+  width: 15px;
+  height: 15px;
+  top: -2px;
+  left: -1px;
+  border-radius: 3px;
+  position: relative;
+  background-color: #f3f3f3;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid #f3f3f3;
+}
+
+input[type='checkbox']:checked:after {
+  width: 15px;
+  height: 15px;
+  top: -2px;
+  left: -1px;
+  border-radius: 3px;
+  position: relative;
+  background-color: #ffa500;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+/* text area */
+
+textarea {
+  font-size: large;
+  width: 95%;
+}
+
+#submit {
+  width: 96%;
+  text-align: center;
+  position: relative;
+  height: 3em;
+  margin-top: 2em;
+  font-size: large;
+  font-weight: bolder;
+  background-color: aqua;
+}
+
+p:not(#description) {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 2px;
+}
